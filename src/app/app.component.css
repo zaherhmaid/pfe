@@ -1,0 +1,59 @@
+#slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 400px;
+}
+
+
+
+
+#slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    max-height: 100%;
+}
+
+
+
+#myDiv {
+    text-align: center;
+    max-height: 1000%;
+    margin: auto;
+    width: 92.5%;
+    padding: 10px;
+    border: 1px solid black;
+   
+    position: absolute;
+    top: 20%;
+    left: 10%;
+
+  }
+  #title {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(240, 240, 248);
+    background-color: lightgrey;
+
+
+
+}
+
+#tablee {
+    border: 1px solid black;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+
+
+}

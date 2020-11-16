@@ -1,0 +1,21 @@
+
+<table class="table table-hover">
+    <h1>list document</h1>
+
+<tr>
+        <td>nomdocument</td>
+        <td>reference</td>
+ 
+      
+</tr>
+<tr *ngFor="let pd of service.list">
+    
+<td (click)="populateForm(pd)">{{pd.nomdocument}}</td>
+<td (click)="populateForm(pd)">{{pd.reference}}</td>
+
+
+<td>
+<i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.iddocument)">iddocument</i>
+</td>
+</tr>
+</table>

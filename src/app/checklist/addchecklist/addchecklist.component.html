@@ -1,0 +1,62 @@
+
+<div >
+
+
+
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)" >
+    <h1>add checklist</h1>
+
+<input type="hidden" name="idchecklist" [value]="service.idchecklist">
+<div >
+    <div class="input-group" >
+       <h3>libelle de checklist</h3>
+        <input name="libelle" #libelle="ngModel" [(ngModel)]="service.formData.libelle" class="form-control" placeholder="entrer votre libelle" required> 
+    </div>
+</div>
+<div>
+     <div class="form-group col-md-4" >
+            <h1>critere</h1>
+
+        <input name="critere" #critere="ngModel" [(ngModel)]="service.formData.critere" class="form-control" placeholder="saisir votre critere" required>
+        </div>
+    </div>
+
+    <div >
+            <div class="input-group">
+                    <h1>cas_de_figure</h1>
+
+                <input name="cas_de_figure" #cas_de_figure="ngModel" [(ngModel)]="service.formData.cas_de_figure" class="form-control" placeholder="saisir votre cas_de_figure" required>
+            
+                </div>
+
+        </div>
+       
+            <div >
+                    <div >
+                            <h1>document_exiges</h1>
+
+                        <textarea type="textarea"name="document_exiges" #document_exiges="ngModel" [(ngModel)]="service.formData.document_exiges" class="form-control" placeholder="saisir votre document_exiges" required></textarea>
+                    </div>
+                </div>
+    
+                <div >
+                    <h1>autres_documents</h1>
+                    <div >
+                        
+                        <textarea name="autres_documents" #autres_documents="ngModel" [(ngModel)]="service.formData.autres_documents" class="form-control" placeholder="saisir votre autres_documents" required ></textarea>
+                    </div>
+                </div>
+                
+               
+                <div >
+                    <button class="form-group col-md-1" type="submit" [disabled]="form.invalid">ajouter</button>
+                    <a routerLink="/menu">
+                        <button class="form-group col-md-1"  >précident</button>
+                    </a>
+                     <button class="form-group col-md-1" >suivant</button>
+                </div>
+
+</form>
+
+
+</div>

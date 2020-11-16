@@ -1,0 +1,85 @@
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    
+      <ul class="nav navbar-nav" routerLinkActive="active">
+        <li class="nav-item"><a class="nav-link" routerLink="home">profil</a></li>
+    
+        <li *ngIf="!authority" class="nav-item">
+          <a class="nav-link" routerLink="auth/login">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+<div id="container" class="effect aside-float aside-bright mainnav-lg">
+        
+
+    <header id="navbar">
+        <div id="navbar-container" class="boxed" >
+
+            <!--Brand logo & name-->
+            <!--================================-->
+            <div class="navbar-header" >
+                <a class="navbar-brand">
+                    <img src="assets/menu/img/biat1.jpg" alt="Flowers"  width="220" height="58"  >
+                    <div class="brand-title">
+                    </div>
+                </a>
+            </div>
+         
+            <div class="navbar-content">
+                <ul class="text-center" >
+
+                        <div  id="title" >
+                            
+                                <h4  >Banque internationale arabe de Tunisie  </h4>
+                                <h4 >بنك تونس العربي الدولي</h4>
+                            
+                        </div>
+                  
+
+                </ul>
+            
+            </div>
+      
+        </div>
+    </header>
+<div class="boxed" >
+
+    <app-menu></app-menu>
+
+      
+
+    
+
+
+
+
+
+
+<button class="scroll-top btn">
+    <i class="pci-chevron chevron-up"></i>
+</button>
+
+
+<div class="container">
+
+<br>
+<br>
+   
+
+            <div id="myDiv">
+
+
+
+
+
+  <router-outlet></router-outlet>
+
+</div>
+</div>
+
+</div>
+</div>

@@ -1,0 +1,32 @@
+<h3>Update Employee</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="name">libelle</label>
+      <input type="text" class="form-control" id="libelle" required [(ngModel)]="service.formData.libelle" name="libelle">
+    </div>
+
+    <div class="form-group">
+      <label for="name">critere</label>
+      <input type="text" class="form-control" id="critere" required [(ngModel)]="service.formData.critere" name="critere">
+    </div>
+
+    <div class="form-group">
+      <label for="name">cas_de_figure</label>
+      <input type="text" class="form-control" id="cas_de_figure" required [(ngModel)]="service.formData.cas_de_figure" name="cas_de_figure">
+    </div>
+
+    <div class="form-group">
+        <label for="name">document_exiges</label>
+        <input type="text" class="form-control" id="document_exiges" required [(ngModel)]="service.formData.document_exiges" name="document_exiges">
+      </div>
+
+      <div class="form-group">
+        <label for="name">autres_documents</label>
+        <input type="text" class="form-control" id="autres_documents" required [(ngModel)]="service.formData.autres_documents" name="autres_documents">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

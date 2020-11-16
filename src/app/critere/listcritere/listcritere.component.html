@@ -1,0 +1,23 @@
+
+<table class="table table-hover">
+    <h1>list critere</h1>
+
+<tr>
+        <td>nomcritere</td>
+        <td>cas_figure</td>
+     
+      
+</tr>
+<tr *ngFor="let pd of service.list">
+    
+<td (click)="populateForm(pd)">{{pd.nomcritere}}</td>
+<td (click)="populateForm(pd)">{{pd.cas_figure}}</td>
+
+
+<td>
+<button class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.idcritere)">delete</button>
+<button (click)="Update()" class="btn btn-info" style="margin-left: 10px">Update</button>
+
+</td>
+</tr>
+</table>

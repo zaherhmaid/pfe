@@ -1,0 +1,23 @@
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <h1>add checklist</h1>
+
+<input type="hidden" name="iddocument" [value]="service.formData.iddocument">
+<div class="form-group col-md-7">
+    <div class="input-group">
+       
+        <input name="nomdocument" #nomdocument="ngModel" [(ngModel)]="service.formData.nomdocument" class="form-control" placeholder="entrer votre nom document" required> 
+    </div>
+</div>
+<div class="form-group col-md-5">
+        <div class="input-group">
+            
+            <input name="reference" #reference="ngModel" [(ngModel)]="service.formData.reference" class="form-control" placeholder="saisir votre reference" required>
+        </div>
+    </div>
+
+
+    
+               
+                <div class="form-group">
+                    <button class="btn btn-success btn-lg btn-block" type="submit" [disabled]="form.invalid">Submit</button></div>
+</form>

@@ -1,0 +1,19 @@
+
+<table class="table table-hover">
+    <h1>list createur</h1>
+
+<tr>
+        <td>idcreateur</td>
+     
+      
+</tr>
+<tr *ngFor="let pd of service.list">
+    
+<td (click)="populateForm(pd)">{{pd.idcreateur}}</td>
+
+
+<td>
+<i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.idcreateur)">idcreateur</i>
+</td>
+</tr>
+</table>

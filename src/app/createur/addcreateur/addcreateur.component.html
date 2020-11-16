@@ -1,0 +1,10 @@
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <h1>add createur</h1>
+
+<input type="hidden" name="idcreateur" [value]="service.formData.idcreateur">
+
+               
+                <div class="form-group">
+                    <button class="btn btn-success btn-lg btn-block" type="submit" [disabled]="form.invalid">Submit</button>
+                </div>
+</form>

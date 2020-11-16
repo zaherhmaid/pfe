@@ -1,0 +1,10 @@
+<div >
+<select > 
+ <option>choisir votre domaine</option>   
+<option  *ngFor="let pd of service.list">{{pd.nomdomaine}}</option>
+
+</select>
+<br>
+    <button  routerLink="/addch">Suivant</button>
+    
+</div>

@@ -1,0 +1,18 @@
+<h3>Update Employee</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input name="nomcritere" #nomcritere="ngModel" [(ngModel)]="service.formData.nomcritere" class="form-control" placeholder="entrer votre nom critere" required> 
+    </div>
+
+    <div class="form-group">
+      <label for="name">Last Name</label>
+      <input name="cas_figure" #cas_figure="ngModel" [(ngModel)]="service.formData.cas_figure" class="form-control" placeholder="saisir votre cas_figure" required>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
