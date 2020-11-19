@@ -59,6 +59,8 @@ import { UpdatecritereComponent } from './critere/updatecritere/updatecritere.co
 import { UploaderComponent } from './uploader/uploader.component';
 //import { MenuComponent } from './menu/menu.component';
 import { AngularFileUploaderModule } from "angular-file-uploader";
+import {ExportExcelService} from '../app/services/export-excel.service';
+
 
 
 
@@ -112,7 +114,7 @@ import { AngularFileUploaderModule } from "angular-file-uploader";
     ToastrModule.forRoot() ,// ToastrModul
     AngularFileUploaderModule
   ],
-  providers: [httpInterceptorProviders],
+  providers: [httpInterceptorProviders,ExportExcelService],
   bootstrap: [AppComponent]
   
 })

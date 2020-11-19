@@ -29,6 +29,16 @@ export class ChecklistService {
     return this.http.delete(this.rootURL+ '/Checklist/'+ idchecklist );
 
   }
+
+
+
+  listchek(){
+    
+    return this.http.get(this.rootURL+ '/Checklist/');
+  }
+
+
+
   refreshList(){
     
     this.http.get(this.rootURL + '/Checklist')

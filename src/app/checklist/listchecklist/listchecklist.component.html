@@ -1,3 +1,4 @@
+<div class="col-md-8" >
 
 <table class="tablee" border="1px solid black"  >
 
@@ -14,7 +15,7 @@
 </tr>
 
 
-<tr *ngFor="let pd of service.list">
+<tr *ngFor="let pd of user">
     
         <td >{{pd.idchecklist}}</td>
        <td >{{pd.libelle}}</td>
@@ -26,6 +27,15 @@
 <td>
 <button class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.idchecklist)">delete</button>
 <button class="far fa-trash-alt fa-lg text-danger" (click)="updateChecklist(pd.idchecklist)" >Update</button>
+
+
 </td>
 </tr>
 </table>
+<div class="center">
+        <button   (click)="exportToExcel()"> <img src="assets/menu/img/excel.png" alt="Flowers"  width="50" height="35"  >
+        </button>
+
+</div>
+
+</div>
